@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C0C1C9D17334F8F001FEC2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0C1C9C17334F8F001FEC2E /* UIKit.framework */; };
+		5C0C1C9F17334F8F001FEC2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0C1C9E17334F8F001FEC2E /* Foundation.framework */; };
+		5C0C1CA117334F8F001FEC2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0C1CA017334F8F001FEC2E /* CoreGraphics.framework */; };
+		5C0C1CA717334F8F001FEC2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CA517334F8F001FEC2E /* InfoPlist.strings */; };
+		5C0C1CA917334F8F001FEC2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CA817334F8F001FEC2E /* main.m */; };
+		5C0C1CAD17334F8F001FEC2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CAC17334F8F001FEC2E /* AppDelegate.m */; };
+		5C0C1CAF17334F8F001FEC2E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CAE17334F8F001FEC2E /* Default.png */; };
+		5C0C1CB117334F8F001FEC2E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CB017334F8F001FEC2E /* Default@2x.png */; };
+		5C0C1CB317334F8F001FEC2E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CB217334F8F001FEC2E /* Default-568h@2x.png */; };
+		5C0C1CB617334F8F001FEC2E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CB517334F8F001FEC2E /* FirstViewController.m */; };
+		5C0C1CB817334F8F001FEC2E /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CB717334F8F001FEC2E /* first.png */; };
+		5C0C1CBA17334F8F001FEC2E /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CB917334F8F001FEC2E /* first@2x.png */; };
+		5C0C1CBD17334F8F001FEC2E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CBC17334F8F001FEC2E /* SecondViewController.m */; };
+		5C0C1CBF17334F8F001FEC2E /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CBE17334F8F001FEC2E /* second.png */; };
+		5C0C1CC117334F8F001FEC2E /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CC017334F8F001FEC2E /* second@2x.png */; };
+		5C0C1CC417334F8F001FEC2E /* FirstViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CC217334F8F001FEC2E /* FirstViewController_iPhone.xib */; };
+		5C0C1CC717334F90001FEC2E /* FirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CC517334F90001FEC2E /* FirstViewController_iPad.xib */; };
+		5C0C1CCA17334F90001FEC2E /* SecondViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CC817334F90001FEC2E /* SecondViewController_iPhone.xib */; };
+		5C0C1CCD17334F90001FEC2E /* SecondViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CCB17334F90001FEC2E /* SecondViewController_iPad.xib */; };
+		5C0C1CD617338B7D001FEC2E /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CD517338B7D001FEC2E /* Word.m */; };
+		5C0C1CD91733A6D2001FEC2E /* CoreWord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CD71733A6D2001FEC2E /* CoreWord.xcdatamodeld */; };
+		5C0C1CDC1733A778001FEC2E /* CoreWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CDB1733A778001FEC2E /* CoreWord.m */; };
+		5C0C1CDF1733B2D1001FEC2E /* DicDatabaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CDE1733B2D1001FEC2E /* DicDatabaseController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C0C1C9917334F8F001FEC2E /* MiniDic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniDic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0C1C9C17334F8F001FEC2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5C0C1C9E17334F8F001FEC2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5C0C1CA017334F8F001FEC2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5C0C1CA417334F8F001FEC2E /* MiniDic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiniDic-Info.plist"; sourceTree = "<group>"; };
+		5C0C1CA617334F8F001FEC2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5C0C1CA817334F8F001FEC2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C0C1CAA17334F8F001FEC2E /* MiniDic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiniDic-Prefix.pch"; sourceTree = "<group>"; };
+		5C0C1CAB17334F8F001FEC2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C0C1CAC17334F8F001FEC2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C0C1CAE17334F8F001FEC2E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5C0C1CB017334F8F001FEC2E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5C0C1CB217334F8F001FEC2E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5C0C1CB417334F8F001FEC2E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		5C0C1CB517334F8F001FEC2E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		5C0C1CB717334F8F001FEC2E /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		5C0C1CB917334F8F001FEC2E /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		5C0C1CBB17334F8F001FEC2E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		5C0C1CBC17334F8F001FEC2E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5C0C1CBE17334F8F001FEC2E /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		5C0C1CC017334F8F001FEC2E /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		5C0C1CC317334F8F001FEC2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController_iPhone.xib; sourceTree = "<group>"; };
+		5C0C1CC617334F90001FEC2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController_iPad.xib; sourceTree = "<group>"; };
+		5C0C1CC917334F90001FEC2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController_iPhone.xib; sourceTree = "<group>"; };
+		5C0C1CCC17334F90001FEC2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController_iPad.xib; sourceTree = "<group>"; };
+		5C0C1CD417338B7D001FEC2E /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		5C0C1CD517338B7D001FEC2E /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		5C0C1CD81733A6D2001FEC2E /* CoreWord.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreWord.xcdatamodel; sourceTree = "<group>"; };
+		5C0C1CDA1733A778001FEC2E /* CoreWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreWord.h; path = ../CoreWord.h; sourceTree = "<group>"; };
+		5C0C1CDB1733A778001FEC2E /* CoreWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreWord.m; path = ../CoreWord.m; sourceTree = "<group>"; };
+		5C0C1CDD1733B2D1001FEC2E /* DicDatabaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DicDatabaseController.h; path = ../DicDatabaseController.h; sourceTree = "<group>"; };
+		5C0C1CDE1733B2D1001FEC2E /* DicDatabaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DicDatabaseController.m; path = ../DicDatabaseController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C0C1C9617334F8E001FEC2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0C1C9D17334F8F001FEC2E /* UIKit.framework in Frameworks */,
+				5C0C1C9F17334F8F001FEC2E /* Foundation.framework in Frameworks */,
+				5C0C1CA117334F8F001FEC2E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C0C1C9017334F8E001FEC2E = {
+			isa = PBXGroup;
+			children = (
+				5C0C1CA217334F8F001FEC2E /* MiniDic */,
+				5C0C1C9B17334F8F001FEC2E /* Frameworks */,
+				5C0C1C9A17334F8F001FEC2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C0C1C9A17334F8F001FEC2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C0C1C9917334F8F001FEC2E /* MiniDic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C0C1C9B17334F8F001FEC2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C0C1C9C17334F8F001FEC2E /* UIKit.framework */,
+				5C0C1C9E17334F8F001FEC2E /* Foundation.framework */,
+				5C0C1CA017334F8F001FEC2E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C0C1CA217334F8F001FEC2E /* MiniDic */ = {
+			isa = PBXGroup;
+			children = (
+				5C0C1CDD1733B2D1001FEC2E /* DicDatabaseController.h */,
+				5C0C1CDE1733B2D1001FEC2E /* DicDatabaseController.m */,
+				5C0C1CD317338B5D001FEC2E /* Model */,
+				5C0C1CAB17334F8F001FEC2E /* AppDelegate.h */,
+				5C0C1CAC17334F8F001FEC2E /* AppDelegate.m */,
+				5C0C1CB417334F8F001FEC2E /* FirstViewController.h */,
+				5C0C1CB517334F8F001FEC2E /* FirstViewController.m */,
+				5C0C1CB717334F8F001FEC2E /* first.png */,
+				5C0C1CB917334F8F001FEC2E /* first@2x.png */,
+				5C0C1CBB17334F8F001FEC2E /* SecondViewController.h */,
+				5C0C1CBC17334F8F001FEC2E /* SecondViewController.m */,
+				5C0C1CBE17334F8F001FEC2E /* second.png */,
+				5C0C1CC017334F8F001FEC2E /* second@2x.png */,
+				5C0C1CC217334F8F001FEC2E /* FirstViewController_iPhone.xib */,
+				5C0C1CC517334F90001FEC2E /* FirstViewController_iPad.xib */,
+				5C0C1CC817334F90001FEC2E /* SecondViewController_iPhone.xib */,
+				5C0C1CCB17334F90001FEC2E /* SecondViewController_iPad.xib */,
+				5C0C1CA317334F8F001FEC2E /* Supporting Files */,
+				5C0C1CD71733A6D2001FEC2E /* CoreWord.xcdatamodeld */,
+			);
+			path = MiniDic;
+			sourceTree = "<group>";
+		};
+		5C0C1CA317334F8F001FEC2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C0C1CA417334F8F001FEC2E /* MiniDic-Info.plist */,
+				5C0C1CA517334F8F001FEC2E /* InfoPlist.strings */,
+				5C0C1CA817334F8F001FEC2E /* main.m */,
+				5C0C1CAA17334F8F001FEC2E /* MiniDic-Prefix.pch */,
+				5C0C1CAE17334F8F001FEC2E /* Default.png */,
+				5C0C1CB017334F8F001FEC2E /* Default@2x.png */,
+				5C0C1CB217334F8F001FEC2E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C0C1CD317338B5D001FEC2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C0C1CDA1733A778001FEC2E /* CoreWord.h */,
+				5C0C1CDB1733A778001FEC2E /* CoreWord.m */,
+				5C0C1CD417338B7D001FEC2E /* Word.h */,
+				5C0C1CD517338B7D001FEC2E /* Word.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C0C1C9817334F8E001FEC2E /* MiniDic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C0C1CD017334F90001FEC2E /* Build configuration list for PBXNativeTarget "MiniDic" */;
+			buildPhases = (
+				5C0C1C9517334F8E001FEC2E /* Sources */,
+				5C0C1C9617334F8E001FEC2E /* Frameworks */,
+				5C0C1C9717334F8E001FEC2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniDic;
+			productName = MiniDic;
+			productReference = 5C0C1C9917334F8F001FEC2E /* MiniDic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C0C1C9117334F8E001FEC2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "chen xiaoping";
+			};
+			buildConfigurationList = 5C0C1C9417334F8E001FEC2E /* Build configuration list for PBXProject "MiniDic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5C0C1C9017334F8E001FEC2E;
+			productRefGroup = 5C0C1C9A17334F8F001FEC2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C0C1C9817334F8E001FEC2E /* MiniDic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C0C1C9717334F8E001FEC2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0C1CA717334F8F001FEC2E /* InfoPlist.strings in Resources */,
+				5C0C1CAF17334F8F001FEC2E /* Default.png in Resources */,
+				5C0C1CB117334F8F001FEC2E /* Default@2x.png in Resources */,
+				5C0C1CB317334F8F001FEC2E /* Default-568h@2x.png in Resources */,
+				5C0C1CB817334F8F001FEC2E /* first.png in Resources */,
+				5C0C1CBA17334F8F001FEC2E /* first@2x.png in Resources */,
+				5C0C1CBF17334F8F001FEC2E /* second.png in Resources */,
+				5C0C1CC117334F8F001FEC2E /* second@2x.png in Resources */,
+				5C0C1CC417334F8F001FEC2E /* FirstViewController_iPhone.xib in Resources */,
+				5C0C1CC717334F90001FEC2E /* FirstViewController_iPad.xib in Resources */,
+				5C0C1CCA17334F90001FEC2E /* SecondViewController_iPhone.xib in Resources */,
+				5C0C1CCD17334F90001FEC2E /* SecondViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C0C1C9517334F8E001FEC2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0C1CA917334F8F001FEC2E /* main.m in Sources */,
+				5C0C1CAD17334F8F001FEC2E /* AppDelegate.m in Sources */,
+				5C0C1CB617334F8F001FEC2E /* FirstViewController.m in Sources */,
+				5C0C1CBD17334F8F001FEC2E /* SecondViewController.m in Sources */,
+				5C0C1CD617338B7D001FEC2E /* Word.m in Sources */,
+				5C0C1CD91733A6D2001FEC2E /* CoreWord.xcdatamodeld in Sources */,
+				5C0C1CDC1733A778001FEC2E /* CoreWord.m in Sources */,
+				5C0C1CDF1733B2D1001FEC2E /* DicDatabaseController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C0C1CA517334F8F001FEC2E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C0C1CA617334F8F001FEC2E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5C0C1CC217334F8F001FEC2E /* FirstViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C0C1CC317334F8F001FEC2E /* en */,
+			);
+			name = FirstViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		5C0C1CC517334F90001FEC2E /* FirstViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C0C1CC617334F90001FEC2E /* en */,
+			);
+			name = FirstViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		5C0C1CC817334F90001FEC2E /* SecondViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C0C1CC917334F90001FEC2E /* en */,
+			);
+			name = SecondViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		5C0C1CCB17334F90001FEC2E /* SecondViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C0C1CCC17334F90001FEC2E /* en */,
+			);
+			name = SecondViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C0C1CCE17334F90001FEC2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C0C1CCF17334F90001FEC2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C0C1CD117334F90001FEC2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiniDic/MiniDic-Prefix.pch";
+				INFOPLIST_FILE = "MiniDic/MiniDic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5C0C1CD217334F90001FEC2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MiniDic/MiniDic-Prefix.pch";
+				INFOPLIST_FILE = "MiniDic/MiniDic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C0C1C9417334F8E001FEC2E /* Build configuration list for PBXProject "MiniDic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C0C1CCE17334F90001FEC2E /* Debug */,
+				5C0C1CCF17334F90001FEC2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C0C1CD017334F90001FEC2E /* Build configuration list for PBXNativeTarget "MiniDic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C0C1CD117334F90001FEC2E /* Debug */,
+				5C0C1CD217334F90001FEC2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5C0C1CD71733A6D2001FEC2E /* CoreWord.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5C0C1CD81733A6D2001FEC2E /* CoreWord.xcdatamodel */,
+			);
+			currentVersion = 5C0C1CD81733A6D2001FEC2E /* CoreWord.xcdatamodel */;
+			path = CoreWord.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5C0C1C9117334F8E001FEC2E /* Project object */;
+}
