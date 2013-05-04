@@ -10,6 +10,7 @@
 #import "CoreWord.h"
 #import "AppDelegate.h"
 #import "NewWordCell.h"
+#import "DetailNewWordViewController.h"
 
 @interface DicDatabaseController ()
 {
@@ -153,6 +154,9 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    
+    DetailNewWordViewController *controller=[[DetailNewWordViewController alloc] initWithWord:[dics objectAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

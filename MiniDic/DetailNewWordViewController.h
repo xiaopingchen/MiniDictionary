@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreWord.h"
 
-@interface SecondViewController : UIViewController
+@interface DetailNewWordViewController : UIViewController
+
+-(id)initWithWord:(CoreWord *)word;
 
 @end

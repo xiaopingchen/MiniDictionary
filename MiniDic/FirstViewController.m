@@ -74,6 +74,8 @@
         [temp appendString:value];
     }
     coreWord.explains=temp;
+    coreWord.detailTranslate=word.description;
+    
     if (coreWord.name==nil) {
         assert(FALSE);
     }

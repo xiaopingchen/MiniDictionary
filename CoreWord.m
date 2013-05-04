@@ -14,5 +14,6 @@
 @dynamic name;
 @dynamic phonetic;
 @dynamic explains;
+@dynamic detailTranslate;
 
 @end

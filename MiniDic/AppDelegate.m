@@ -10,8 +10,6 @@
 
 #import "FirstViewController.h"
 
-#import "SecondViewController.h"
-
 #import "DicDatabaseController.h"
 
 @implementation AppDelegate

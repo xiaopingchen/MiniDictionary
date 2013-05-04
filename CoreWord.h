@@ -15,5 +15,6 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * phonetic;
 @property (nonatomic, retain) NSString * explains;
+@property (nonatomic, retain) NSString * detailTranslate;
 
 @end
