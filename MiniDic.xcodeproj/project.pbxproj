@@ -30,6 +30,7 @@
 		5C0C1CD91733A6D2001FEC2E /* CoreWord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CD71733A6D2001FEC2E /* CoreWord.xcdatamodeld */; };
 		5C0C1CDC1733A778001FEC2E /* CoreWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CDB1733A778001FEC2E /* CoreWord.m */; };
 		5C0C1CDF1733B2D1001FEC2E /* DicDatabaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CDE1733B2D1001FEC2E /* DicDatabaseController.m */; };
+		7AF8918B1734000800317616 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF8918A1734000800317616 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		5C0C1CDB1733A778001FEC2E /* CoreWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreWord.m; path = ../CoreWord.m; sourceTree = "<group>"; };
 		5C0C1CDD1733B2D1001FEC2E /* DicDatabaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DicDatabaseController.h; path = ../DicDatabaseController.h; sourceTree = "<group>"; };
 		5C0C1CDE1733B2D1001FEC2E /* DicDatabaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DicDatabaseController.m; path = ../DicDatabaseController.m; sourceTree = "<group>"; };
+		7AF8918A1734000800317616 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF8918B1734000800317616 /* CoreData.framework in Frameworks */,
 				5C0C1C9D17334F8F001FEC2E /* UIKit.framework in Frameworks */,
 				5C0C1C9F17334F8F001FEC2E /* Foundation.framework in Frameworks */,
 				5C0C1CA117334F8F001FEC2E /* CoreGraphics.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		5C0C1C9B17334F8F001FEC2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AF8918A1734000800317616 /* CoreData.framework */,
 				5C0C1C9C17334F8F001FEC2E /* UIKit.framework */,
 				5C0C1C9E17334F8F001FEC2E /* Foundation.framework */,
 				5C0C1CA017334F8F001FEC2E /* CoreGraphics.framework */,
@@ -388,6 +392,7 @@
 				5C0C1CD217334F90001FEC2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

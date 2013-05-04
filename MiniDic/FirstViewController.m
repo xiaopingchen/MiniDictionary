@@ -30,7 +30,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
+        self.title = @"首页";
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
         
         inputView=[[UITextField alloc] initWithFrame:CGRectMake(10, 10, 200, 40)];
@@ -44,24 +44,29 @@
         [self.view addSubview:btnSearch];
         
         double screenHeight=[[UIScreen mainScreen] applicationFrame].size.height;
-        scrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(10, 60, 320-20, screenHeight-50)];
+        scrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(10, 60, 320-20, screenHeight-50-44)];
         [self.view addSubview:scrollView];
         
         outputView =[[UITextView alloc]initWithFrame:CGRectMake(0, 0, 300, screenHeight-50)];
+        [outputView setEditable:false];
         [scrollView addSubview:outputView];
         
-        UIButton *btnAdd=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-        btnAdd.frame=CGRectMake(220, 60, 30, 30);
-        [btnAdd setTitle:@"add" forState:UIControlStateNormal];
-        [btnAdd addTarget:self action:@selector(addToDataBase:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:btnAdd];
+//        UIButton *btnAdd=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+//        btnAdd.frame=CGRectMake(220, 60, 30, 30);
+//        [btnAdd setTitle:@"add" forState:UIControlStateNormal];
+//        [btnAdd addTarget:self action:@selector(addToDataBase:) forControlEvents:UIControlEventTouchUpInside];
+//        [self.view addSubview:btnAdd];
+        
+        self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addToDataBase:)];
+        
+        self.tabBarController.title=@"首页";
     }
     return self;
 }
 
 -(void)addToDataBase:(id)sender
 {
-    CoreWord *coreWord=(CoreWord*)[NSEntityDescription insertNewObjectForEntityForName:@"Entry" inManagedObjectContext:myDelegate.managedObjectContext];
+    CoreWord *coreWord=(CoreWord*)[NSEntityDescription insertNewObjectForEntityForName:@"CoreWord" inManagedObjectContext:myDelegate.managedObjectContext];
     coreWord.name=word.name;
     coreWord.phonetic=word.phonetic;
     NSMutableString *temp=[NSMutableString new];
@@ -69,6 +74,9 @@
         [temp appendString:value];
     }
     coreWord.explains=temp;
+    if (coreWord.name==nil) {
+        assert(FALSE);
+    }
     NSError *error=nil;
     BOOL isSaveSuccess=[myDelegate.managedObjectContext save:&error];
     if (isSaveSuccess) {
@@ -96,13 +104,15 @@
 {
     NSError *error;
     NSDictionary *json=[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-    NSLog(@"content:%@",json);
+   // NSLog(@"content:%@",json);
     
     outputView.text=json.description;
     
     word=[[Word alloc]initWithDictionary:json];
     outputView.text=word.description;
+    NSLog(@"%f",outputView.frame.size.height);
     scrollView.contentSize=CGSizeMake(scrollView.contentSize.width, outputView.frame.size.height);
+   
     return json;
 }
 
