@@ -9,6 +9,7 @@
 #import "DicDatabaseController.h"
 #import "CoreWord.h"
 #import "AppDelegate.h"
+#import "NewWordCell.h"
 
 @interface DicDatabaseController ()
 {
@@ -51,8 +52,9 @@
     [super viewDidLoad];
     
     myDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    [self.tableView registerClass:[NewWordCell class] forCellReuseIdentifier:@"NewWordCell"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -84,16 +86,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"NewWordCell";
+    NewWordCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     NSLog(@"%d",indexPath.row);
     CoreWord *word=[dics objectAtIndex:indexPath.row];
-    cell.textLabel.text=word.name;
-    cell.detailTextLabel.text=word.explains;
+    cell.lblTitle.text=word.name;
+    cell.lblExplain.text=word.explains;
     
     // Configure the cell...
     
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
 }
 
 /*
