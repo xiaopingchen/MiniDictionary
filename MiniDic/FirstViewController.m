@@ -29,13 +29,14 @@
 @implementation FirstViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+{    
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"首页";
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
         
         inputView=[[UITextField alloc] initWithFrame:CGRectMake(10, 10, 200, 40)];
+        inputView.contentHorizontalAlignment=UIControlContentVerticalAlignmentCenter;
         inputView.borderStyle=UITextBorderStyleRoundedRect;
         inputView.clearButtonMode=UITextFieldViewModeAlways;
        // inputView.font.lineHeight=30;
