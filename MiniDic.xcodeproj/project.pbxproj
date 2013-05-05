@@ -24,12 +24,11 @@
 		5C0C1CC117334F8F001FEC2E /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CC017334F8F001FEC2E /* second@2x.png */; };
 		5C0C1CC417334F8F001FEC2E /* FirstViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CC217334F8F001FEC2E /* FirstViewController_iPhone.xib */; };
 		5C0C1CC717334F90001FEC2E /* FirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CC517334F90001FEC2E /* FirstViewController_iPad.xib */; };
-		5C0C1CCA17334F90001FEC2E /* SecondViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CC817334F90001FEC2E /* SecondViewController_iPhone.xib */; };
-		5C0C1CCD17334F90001FEC2E /* SecondViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C1CCB17334F90001FEC2E /* SecondViewController_iPad.xib */; };
 		5C0C1CD617338B7D001FEC2E /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CD517338B7D001FEC2E /* Word.m */; };
 		5C0C1CD91733A6D2001FEC2E /* CoreWord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CD71733A6D2001FEC2E /* CoreWord.xcdatamodeld */; };
 		5C0C1CDC1733A778001FEC2E /* CoreWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CDB1733A778001FEC2E /* CoreWord.m */; };
 		5C0C1CDF1733B2D1001FEC2E /* DicDatabaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C1CDE1733B2D1001FEC2E /* DicDatabaseController.m */; };
+		7AEA422517360A0300788392 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEA422417360A0300788392 /* MBProgressHUD.m */; };
 		7AF51C6B1734B23F001AC6DA /* NewWordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF51C6A1734B23F001AC6DA /* NewWordCell.m */; };
 		7AF8918B1734000800317616 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF8918A1734000800317616 /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -58,8 +57,6 @@
 		5C0C1CC017334F8F001FEC2E /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		5C0C1CC317334F8F001FEC2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController_iPhone.xib; sourceTree = "<group>"; };
 		5C0C1CC617334F90001FEC2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController_iPad.xib; sourceTree = "<group>"; };
-		5C0C1CC917334F90001FEC2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController_iPhone.xib; sourceTree = "<group>"; };
-		5C0C1CCC17334F90001FEC2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController_iPad.xib; sourceTree = "<group>"; };
 		5C0C1CD417338B7D001FEC2E /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
 		5C0C1CD517338B7D001FEC2E /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
 		5C0C1CD81733A6D2001FEC2E /* CoreWord.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreWord.xcdatamodel; sourceTree = "<group>"; };
@@ -67,6 +64,8 @@
 		5C0C1CDB1733A778001FEC2E /* CoreWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreWord.m; path = ../CoreWord.m; sourceTree = "<group>"; };
 		5C0C1CDD1733B2D1001FEC2E /* DicDatabaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DicDatabaseController.h; path = ../DicDatabaseController.h; sourceTree = "<group>"; };
 		5C0C1CDE1733B2D1001FEC2E /* DicDatabaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DicDatabaseController.m; path = ../DicDatabaseController.m; sourceTree = "<group>"; };
+		7AEA422317360A0300788392 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		7AEA422417360A0300788392 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		7AF51C691734B23F001AC6DA /* NewWordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWordCell.h; sourceTree = "<group>"; };
 		7AF51C6A1734B23F001AC6DA /* NewWordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewWordCell.m; sourceTree = "<group>"; };
 		7AF8918A1734000800317616 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -118,6 +117,7 @@
 		5C0C1CA217334F8F001FEC2E /* MiniDic */ = {
 			isa = PBXGroup;
 			children = (
+				7AEA4222173609D800788392 /* Thirdparty */,
 				7AF51C681734B211001AC6DA /* UITableViewCell */,
 				5C0C1CDD1733B2D1001FEC2E /* DicDatabaseController.h */,
 				5C0C1CDE1733B2D1001FEC2E /* DicDatabaseController.m */,
@@ -134,8 +134,6 @@
 				5C0C1CC017334F8F001FEC2E /* second@2x.png */,
 				5C0C1CC217334F8F001FEC2E /* FirstViewController_iPhone.xib */,
 				5C0C1CC517334F90001FEC2E /* FirstViewController_iPad.xib */,
-				5C0C1CC817334F90001FEC2E /* SecondViewController_iPhone.xib */,
-				5C0C1CCB17334F90001FEC2E /* SecondViewController_iPad.xib */,
 				5C0C1CA317334F8F001FEC2E /* Supporting Files */,
 				5C0C1CD71733A6D2001FEC2E /* CoreWord.xcdatamodeld */,
 			);
@@ -165,6 +163,15 @@
 				5C0C1CD517338B7D001FEC2E /* Word.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		7AEA4222173609D800788392 /* Thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				7AEA422317360A0300788392 /* MBProgressHUD.h */,
+				7AEA422417360A0300788392 /* MBProgressHUD.m */,
+			);
+			name = Thirdparty;
 			sourceTree = "<group>";
 		};
 		7AF51C681734B211001AC6DA /* UITableViewCell */ = {
@@ -237,8 +244,6 @@
 				5C0C1CC117334F8F001FEC2E /* second@2x.png in Resources */,
 				5C0C1CC417334F8F001FEC2E /* FirstViewController_iPhone.xib in Resources */,
 				5C0C1CC717334F90001FEC2E /* FirstViewController_iPad.xib in Resources */,
-				5C0C1CCA17334F90001FEC2E /* SecondViewController_iPhone.xib in Resources */,
-				5C0C1CCD17334F90001FEC2E /* SecondViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +263,7 @@
 				5C0C1CDC1733A778001FEC2E /* CoreWord.m in Sources */,
 				5C0C1CDF1733B2D1001FEC2E /* DicDatabaseController.m in Sources */,
 				7AF51C6B1734B23F001AC6DA /* NewWordCell.m in Sources */,
+				7AEA422517360A0300788392 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,22 +292,6 @@
 				5C0C1CC617334F90001FEC2E /* en */,
 			);
 			name = FirstViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
-		5C0C1CC817334F90001FEC2E /* SecondViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C0C1CC917334F90001FEC2E /* en */,
-			);
-			name = SecondViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		5C0C1CCB17334F90001FEC2E /* SecondViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C0C1CCC17334F90001FEC2E /* en */,
-			);
-			name = SecondViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

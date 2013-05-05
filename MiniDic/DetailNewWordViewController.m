@@ -8,11 +8,15 @@
 
 #import "DetailNewWordViewController.h"
 #import "CoreWord.h"
+#define NAVIGATIONBARHEIGHT 44.0f
+#define TABBARHEIGHT    44.0f
 
 @interface DetailNewWordViewController ()
 {
     UILabel *lblName;
     UILabel *lblTranslate;
+    UIScrollView *contentScrollView;
+    
     CoreWord *word;
 }
 
@@ -35,11 +39,17 @@
         
         lblTranslate=[[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 30)];
         lblTranslate.textColor=[UIColor blackColor];
-        lblTranslate.numberOfLines=10;
+        lblTranslate.numberOfLines=0;
 
         
-        [self.view addSubview:lblTranslate];
+       // [self.view addSubview:lblTranslate];
+       // self.view.backgroundColor=[UIColor redColor];
+        double screenHeight=[[UIScreen mainScreen]applicationFrame].size.height;
         
+        contentScrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, screenHeight-NAVIGATIONBARHEIGHT-TABBARHEIGHT)];
+        [self.view addSubview:contentScrollView];
+        
+        [contentScrollView addSubview:lblTranslate];
     }
     
     return self;
@@ -59,10 +69,11 @@
 -(void)viewDidAppear:(BOOL)animated{
     lblName.text=word.name;
     lblTranslate.text=word.detailTranslate;
-    
-    CGSize translateSize=[lblTranslate.text sizeWithFont:lblTranslate.font constrainedToSize:CGSizeMake(300, 1000) lineBreakMode:NSLineBreakByClipping];
-    lblTranslate.frame=CGRectMake(10, 10, 300, translateSize.height);
 
+    lblTranslate.frame=CGRectMake(10, 10, 300, 1000000);
+    [lblTranslate sizeToFit];
+    
+    contentScrollView.contentSize=CGSizeMake(lblTranslate.frame.size.width, lblTranslate.frame.size.height+15);
 }
 
 - (void)viewDidLoad
